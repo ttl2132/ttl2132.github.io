@@ -29,5 +29,7 @@ function draw() {
 	c = color(255, 204, 107, 150);
 	fill(c);
 	triangle(100, 100, 700 - 300/60 * second() , 100 + 425/60 * second() , 700, 100)
+    
+    console.log(minute);
 
 }
