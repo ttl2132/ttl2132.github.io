@@ -29,7 +29,7 @@ function draw() {
     stroke(36, 36, 255);
     c = color(82, 82, 255, 200);
 	fill(c);
-	triangle(map(hour(), 0, 12, x2, x1), map(hour(), 0, 12, y2, y1), x2, y2, x3, y3);
+	triangle(map(hour()%12, 0, 12, x2, x1), map(hour()%12, 0, 12, y2, y1), x2, y2, x3, y3);
 
     stroke(255, 187, 56);
 	c = color(255, 204, 107, 150);
