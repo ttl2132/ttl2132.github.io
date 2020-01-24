@@ -1,7 +1,6 @@
 function setup() {
 	createCanvas(800,600); // make an HTML canvas element width x height pixels
 	frameRate(1);
-
 }
 
 function draw() {
@@ -29,7 +28,8 @@ function draw() {
 	c = color(255, 204, 107, 150);
 	fill(c);
 	triangle(100, 100, 700 - 300/60 * second() , 100 + 425/60 * second() , 700, 100)
-    
-    console.log(minute);
+	if (second() == 0) {
+        console.log(minute());
+    }
 
 }
