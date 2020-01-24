@@ -4,23 +4,33 @@ function setup() {
 }
 
 function draw() {
-	background(225);
+    var widthMargin = 100;
+    var topHeightMargin = 100;
+    var botHeightMargin = 75;
+	background(255);
 	c = color(255);
 	fill(c);
 	noStroke();
-	triangle(100, 100, 400, 525, 700, 100);
+	var x1 = widthMargin;
+	var y1 = topHeightMargin;
+	var x2 = 800/2;
+	var y2 = 600-botHeightMargin;
+	var x3 = 800-widthMargin;
+	var y3 = topHeightMargin;
+
+	triangle(x1, y1, x2, y2, x3, y3);
 
 	c = color(173, 97, 255, 250);
 	fill(c);
-	triangle(100, 100, 400, 525, map(minute(), 0, 60, 100, 700), 100);
+	triangle(x1, y1, x2, y2, map(minute(), 0, 60, x1, x3), y3);
 
     c = color(82, 82, 255, 200);
 	fill(c);
-	triangle(map(hour(), 0, 12, 400, 100), map(hour(), 0, 12, 525, 100), 400, 525, 700, 100);
+	triangle(map(hour(), 0, 12, x2, x1), map(hour(), 0, 12, y2, y1), x2, y2, x3, y3);
 
 	c = color(255, 204, 107, 150);
 	fill(c);
-	triangle(100, 100, map(second(), 0, 60, 700, 400), map(second(), 0, 60, 100, 525), 700, 100);
+	triangle(x1, y1, map(second(), 0, 60, x3, x2), map(second(), 0, 60, y3, y2), x3, y3);
 
 	if (second() == 0) {
         console.log(minute());
