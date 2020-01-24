@@ -20,14 +20,18 @@ function draw() {
 
 	triangle(x1, y1, x2, y2, x3, y3);
 
+	strokeWeight(2);
+    stroke(155, 61, 255);
 	c = color(173, 97, 255, 250);
 	fill(c);
 	triangle(x1, y1, x2, y2, map(minute(), 0, 60, x1, x3), y3);
 
+    stroke(36, 36, 255);
     c = color(82, 82, 255, 200);
 	fill(c);
 	triangle(map(hour(), 0, 12, x2, x1), map(hour(), 0, 12, y2, y1), x2, y2, x3, y3);
 
+    stroke(255, 187, 56);
 	c = color(255, 204, 107, 150);
 	fill(c);
 	triangle(x1, y1, map(second(), 0, 60, x3, x2), map(second(), 0, 60, y3, y2), x3, y3);
