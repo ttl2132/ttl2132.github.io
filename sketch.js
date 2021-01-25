@@ -1,10 +1,10 @@
 function setup() {
-	createCanvas(1000, 600); // make an HTML canvas element width x height pixels
+	createCanvas(1200, 600); // make an HTML canvas element width x height pixels
 	frameRate(1);
 }
 
 function draw() {
-    var widthMargin = 300;
+    var widthMargin = 400;
     var topHeightMargin = 100;
     var botHeightMargin = 75;
 	background(255);
@@ -13,9 +13,9 @@ function draw() {
 	noStroke();
 	var x1 = widthMargin;
 	var y1 = topHeightMargin;
-	var x2 = 1000/2;
-	var y2 = 600-botHeightMargin;
-	var x3 = 1000-widthMargin;
+	var x2 = 1200/2;
+	var y2 = 500-botHeightMargin;
+	var x3 = 1200-widthMargin;
 	var y3 = topHeightMargin;
 
 	triangle(x1, y1, x2, y2, x3, y3);
