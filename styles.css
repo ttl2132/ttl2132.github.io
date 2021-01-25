@@ -14,10 +14,16 @@ body {
 
 .content {
     display: flex;
-    padding: 20%;
+    padding: 5% 20%;
 }
 
-#profile {
+.subtitle {
+    font-size: 36px;
+    color: #7b32a6;
+
+}
+
+.text {
     padding: 20px;
     font-size: 24px;
     color: #7b32a6;
