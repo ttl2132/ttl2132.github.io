@@ -13,9 +13,9 @@ function draw() {
 	noStroke();
 	var x1 = widthMargin;
 	var y1 = topHeightMargin;
-	var x2 = 800/2;
+	var x2 = 1000/2;
 	var y2 = 600-botHeightMargin;
-	var x3 = 800-widthMargin;
+	var x3 = 1000-widthMargin;
 	var y3 = topHeightMargin;
 
 	triangle(x1, y1, x2, y2, x3, y3);
