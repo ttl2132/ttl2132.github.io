@@ -1,5 +1,5 @@
 function setup() {
-	createCanvas(800, 600); // make an HTML canvas element width x height pixels
+	createCanvas(1000, 600); // make an HTML canvas element width x height pixels
 	frameRate(1);
 }
 
