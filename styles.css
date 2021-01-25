@@ -1,19 +1,29 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 .title {
     font-size: 48px;
+    color: white;
 }
 .header {
     display: flex;
     padding: 30px;
-    background-color: #7b32a6;
+    background-color: #bc5ef3;
+}
+
+.content {
+    display: flex;
+    padding: 20%;
 }
 
 #profile {
     padding: 20px;
-    color: white;
     font-size: 24px;
+    color: #7b32a6;
 }
 
 #profilepic {
-    max-width:50%;
-    max-height:50%;
+    max-width:30%;
+    max-height:30%;
 }
