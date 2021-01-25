@@ -4,7 +4,7 @@ function setup() {
 }
 
 function draw() {
-    var widthMargin = 100;
+    var widthMargin = 300;
     var topHeightMargin = 100;
     var botHeightMargin = 75;
 	background(255);
